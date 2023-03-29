@@ -40,9 +40,11 @@ check.addEventListener("click", () => {
     highscore.textContent = HighScore
   }else if( Math.abs(randomNumber-value) > distance ){
     Score++;
+    score.textContent =Score
     message.textContent = "📈  Too high!"
   }else if(Math.abs(randomNumber-value) < distance ){
     Score++
+    score.textContent =Score
     distance =  Math.abs(randomNumber - value)
     message.textContent = "📉 Too low!"
   }
